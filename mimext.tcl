@@ -13,7 +13,7 @@ set ix [string first / $mstr]
 
 if {$ix >= 0} {
 	incr ix -1
-	set type [string range $s 0 $ix]
+	set type [string range $mstr 0 $ix]
 } else {set type "uknown"}
 
 set extmime [dict create "application/andrew-inset" "N/A"\
