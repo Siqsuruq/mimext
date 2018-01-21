@@ -9,6 +9,13 @@ namespace eval ::mimext {
 
 
 proc ::mimext::get_ext {mstr} {
+set ix [string first / $mstr]
+
+if {$ix >= 0} {
+	incr ix -1
+	set type [string range $s 0 $ix]
+} else {set type "uknown"}
+
 set extmime [dict create "application/andrew-inset" "N/A"\
 "application/applixware" ".aw"\
 "application/atom+xml" ".atom"\
@@ -702,6 +709,6 @@ set extmime [dict create "application/andrew-inset" "N/A"\
 "x-conference/x-cooltalk" ".ice"\
 	]
 	if {[dict exists $extmime $mstr] != 0} {
-		return [dict get $extmime $mstr]
-	} else {return "txt"}
+		return "$type [dict get $extmime $mstr]"
+	} else {return "$type txt"}
 }
