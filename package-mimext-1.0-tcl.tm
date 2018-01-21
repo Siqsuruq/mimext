@@ -576,6 +576,7 @@ set extmime [dict create "application/andrew-inset" "N/A"\
 "audio/adpcm" ".adp"\
 "audio/basic" ".au"\
 "audio/midi" ".mid"\
+"audio/mp3" ".mp3"\
 "audio/mp4" ".mp4a"\
 "audio/mpeg" ".mpga"\
 "audio/ogg" ".oga"\
