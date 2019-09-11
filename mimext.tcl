@@ -648,6 +648,7 @@ set extmime [dict create "application/andrew-inset" "N/A"\
 "text/richtext" ".rtx"\
 "text/sgml" ".sgml"\
 "text/tab-separated-values" ".tsv"\
+"text/tcl" ".tcl"\
 "text/troff" ".t"\
 "text/turtle" ".ttl"\
 "text/uri-list" ".uri"\
@@ -663,6 +664,7 @@ set extmime [dict create "application/andrew-inset" "N/A"\
 "text/vnd.sun.j2me.app-descriptor" ".jad"\
 "text/vnd.wap.wml" ".wml"\
 "text/vnd.wap.wmlscript" ".wmls"\
+"text/xml" ".xml"\
 "text/x-asm" ".s"\
 "text/x-c" ".c"\
 "text/x-fortran" ".f"\
@@ -711,5 +713,5 @@ set extmime [dict create "application/andrew-inset" "N/A"\
 	]
 	if {[dict exists $extmime $mstr] != 0} {
 		return "$type [dict get $extmime $mstr]"
-	} else {return "$type txt"}
+	} else {return "$type .txt"}
 }
