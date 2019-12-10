@@ -537,6 +537,7 @@ set extmime [dict create "application/andrew-inset" "N/A"\
 "application/x-x509-ca-cert" ".der"\
 "application/x-xfig" ".fig"\
 "application/x-xpinstall" ".xpi"\
+"application/x-zip-compressed" ".zip"\
 "application/xcap-diff+xml" ".xdf"\
 "application/xenc+xml" ".xenc"\
 "application/xhtml+xml" ".xhtml"\
