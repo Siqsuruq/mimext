@@ -8,5 +8,4 @@
 # script is sourced, the variable $dir must contain the
 # full path name of this file's directory.
 
-package ifneeded mimext 1.0 [list source [file join $dir package-mimext-1.0-tcl.tm]]
-
+package ifneeded mimext 1.1 [list source [file join $dir mimextClass.tcl]]
