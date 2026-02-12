@@ -1,5 +1,5 @@
-package provide mimext 1.1
-package require Tcl 8.6
+package require Tcl 8.6-
+package provide mimext 1.2
 
 oo::class create mimextClass {
     # Top-Level Media Types: https://www.iana.org/assignments/top-level-media-types/top-level-media-types.xhtml#top-level-media-types
